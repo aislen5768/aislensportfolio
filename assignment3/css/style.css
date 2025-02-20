@@ -1,0 +1,221 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	background-color: antiquewhite;
+	font-family: Vollkorn;
+}
+
+
+#container {
+	width:90%;
+	margin:auto;
+}
+
+
+
+figure {
+	margin:0px;
+}
+
+figure img {
+	width:100%;
+}
+
+nav section {
+	border:1px solid black;
+}
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+.desktop{
+    display:none;
+}
+section{
+    background-color: rgb(240, 235, 187);
+}
+
+footer{
+    font-size: 20px;
+}
+.Bluerasinfo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.pageonemove{
+    position:absolute;
+    top:50px;
+    right:80px;
+    font-size: 20px;
+}
+.descripone{
+   font-size:20px;
+   
+   text-align: center;
+
+}
+.Carebearinfo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.descriptwo{
+    font-size:20px;
+   
+    text-align: center;
+}
+.PineHammerinfo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.descripthree{
+    font-size:20px;
+   
+    text-align: center;
+}
+.Candyguninfo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.descripfour{
+    font-size:20px;
+   
+    text-align: center;
+} 
+.bananaguninfo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.descripfive{
+    font-size:20px;
+   
+    text-align: center;
+}
+.Rocketfuninfo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.descripsix{
+    font-size:20px;
+   
+    text-align: center;
+}
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {
+	
+	
+	
+	
+} /* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	#container {
+		width:80%;
+	}
+    .mobile{
+        display:none;
+    }
+    .secondmobile{
+        display:none;
+    }
+    .desktop{
+        display:block;
+    }
+		
+	/*nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    nav section{
+        flex: 0 1 48%;
+    }*/
+    nav{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap:15px;
+    }
+} /* closes 769px+ */
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+    .mobile{
+        display:none;
+    }
+    nav{
+        grid-template-columns: repeat(3,1fr);
+    }
+	
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+
