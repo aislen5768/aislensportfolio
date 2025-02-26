@@ -1,0 +1,121 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+.autoimageweb{
+    height: 50%;
+    background-position: center;
+    
+    top:0%;
+
+}
+
+.first {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/imageworkauto.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .second{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .firstext{
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  .secondtext{
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  footer{
+    font-size: 16px;;
+  }
+  div {
+    width: 100%;
+    transition: width 4s;
+    
+  }
+  
+  div:hover {
+    width: 300px;
+    transform: rotate(20deg);
+    font-size: 60px;
+  }
+  body{
+    
+    
+    background-color: rgb(255, 255, 255);
+    animation-name: example;
+    animation-duration: 15s;
+    animation-delay: 5s;
+      
+  }
+  @keyframes example {
+    0%   {background-color: rgb(255, 255, 255);}
+    25%  {background-color: yellow;}
+    50%  {background-color: rgb(255, 0, 115);}
+    100% {background-color: rgb(11, 241, 11);}
+
+  }
+.textaprag{
+    padding: 100px;
+}
+
+
+
+
+
+
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+
+
